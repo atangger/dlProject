@@ -1,9 +1,3 @@
-''' Training Frustum PointNets on SUN-RGBD dataset.
-
-Author: Charles R. Qi
-Date: October 2017
-'''
-
 import argparse
 import math
 from datetime import datetime
