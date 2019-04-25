@@ -9,34 +9,29 @@ The semantic understanding of the scene is expected to be very useful in many do
 
 Download <a href="http://rgbd.cs.princeton.edu">SUNRGBD V1 dataset</a>. 
 
+Using the data preprocessing script in the data folder to prepare the pickle file for training.
+
 ### 2. Training
-Run train_one_hot.py.
+
+Run 
+```
+python train.py --model YOURMODELNAME
+```
 
 ### 3. Testing
 
+Run the following script for testing.
+```
+python evaluate.py
+```
+
+### 4.visualization:
+Run the following command to visualize the result:
+```
+python viz.py --data_path val_1002.zip.pickle --result_path test_results.pickle --viz
+```
+
 ## Reference:
 
-
-[1] Qi, Charles R., et al. "Pointnet: Deep learning on point sets for 3d classification and segmentation." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
-
-[2] Qi, Charles Ruizhongtai, et al. "Pointnet++: Deep hierarchical feature learning on point sets in a metric space." Advances in Neural Information Processing Systems. 2017.
-
-[3] Song, Shuran, and Jianxiong Xiao. "Deep sliding shapes for amodal 3d object detection in rgb-d images." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
-
-[4] Dai, Angela, et al. "Scannet: Richly-annotated 3d reconstructions of indoor scenes." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017.
-
-[5] Song, Shuran, Samuel P. Lichtenberg, and Jianxiong Xiao. "Sun rgb-d: A rgb-d scene understanding benchmark suite." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
-
-[6] He, Kaiming, et al. "Mask r-cnn." Proceedings of the IEEE international conference on computer vision. 2017.
-
-[7] Qi, Charles R., et al. "Frustum pointnets for 3d object detection from rgb-d data." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
-
-[8] Wu, Zhirong, et al. "3d shapenets: A deep representation for volumetric shapes." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
-
-[9] Su, Hang, et al. "Multi-view convolutional neural networks for 3d shape recognition." Proceedings of the IEEE international conference on computer vision. 2015.
-
-[10] Song, Shuran, and Jianxiong Xiao. "Deep sliding shapes for amodal 3d object detection in rgb-d images." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
-
-[11] D. Z. Wang and I. Posner. Voting for voting in online point cloud object detection. Proceedings of the Robotics: Science and Systems, Rome, Italy, 1317, 2015.
-
-[12] Ren, Shaoqing, et al. "Faster r-cnn: Towards real-time object detection with region proposal networks." Advances in neural information processing systems. 2015.
+* <a href="http://stanford.edu/~rqi/pointnet" target="_blank">PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation</a> by Qi et al. (CVPR 2017 Oral Presentation). 
+* <a href="http://stanford.edu/~rqi/pointnet2" target="_black">PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space</a> by Qi et al. (NIPS 2017).
